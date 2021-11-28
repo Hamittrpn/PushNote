@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "718483364876",
+    "project_id": "pushnote-96133",
+    "storage_bucket": "pushnote-96133.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718483364876:android:a1b93a3ec872c524482229",
+        "android_client_info": {
+          "package_name": "com.solarissense.push_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718483364876-od3utbm5kh103c3ah0nhbv7dc93o951b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBytmMf3M1J54g4HTrHj-TDvDYerJVtfIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718483364876-od3utbm5kh103c3ah0nhbv7dc93o951b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

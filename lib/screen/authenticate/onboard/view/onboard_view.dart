@@ -5,9 +5,11 @@ class OnBoardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("Test Screen"),
+    return Scaffold(
+      body: Container(
+        child: Center(
+          child: Text("Test On Board Screen"),
+        ),
       ),
     );
   }

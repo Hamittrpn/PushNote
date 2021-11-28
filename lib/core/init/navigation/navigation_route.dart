@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:push_note/screen/authenticate/splash/view/splash_view.dart';
+import 'package:push_note/screen/authenticate/test_view.dart';
 import '../../component/card/not_found_card.dart';
 import '../../constant/navigation/navigation_constant.dart';
 import '../../../screen/authenticate/onboard/view/onboard_view.dart';
@@ -13,17 +14,15 @@ class NavigationRoute {
 
   Route<dynamic> generateRoute(RouteSettings args) {
     switch (args.name) {
+      case NavigationConstants.DEFAULT:
+        return normalNavigate(SplashView());
       case NavigationConstants.TEST_VIEW:
         return MaterialPageRoute(
-          builder: (context) => const OnBoardView(),
+          builder: (context) => const TestView(),
         );
       case NavigationConstants.ONBOARD_VIEW:
         return MaterialPageRoute(
           builder: (context) => const OnBoardView(),
-        );
-      case NavigationConstants.SPLASH_VIEW:
-        return MaterialPageRoute(
-          builder: (context) => const SplashView(),
         );
       default:
         return MaterialPageRoute(builder: (context) => const NotFoundCard());

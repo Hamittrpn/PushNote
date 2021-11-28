@@ -10,7 +10,7 @@ class NavigationService implements INavigationService {
   GlobalKey<NavigatorState> navigatorKey = GlobalKey();
   final removeAllOldRoutes = (Route<dynamic> route) => false;
 
-  void navigateToPage(String path, Object object) {
+  void navigateToPage(String path, Object? object) {
     navigatorKey.currentState!.pushNamed(path, arguments: object);
   }
 

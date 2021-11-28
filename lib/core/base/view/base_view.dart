@@ -23,8 +23,6 @@ class BaseView<T extends Store> extends StatefulWidget {
 class _BaseViewState<T extends Store> extends State<BaseView<T>> {
   late T model;
 
-  late final ReactionDisposer _disposer;
-
   @override
   void initState() {
     model = widget.viewModel;
@@ -35,7 +33,6 @@ class _BaseViewState<T extends Store> extends State<BaseView<T>> {
 
   @override
   void dispose() {
-    _disposer();
     super.dispose();
     if (widget.onDispose != null) widget.onDispose!();
   }
